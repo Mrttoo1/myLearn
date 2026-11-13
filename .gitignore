@@ -1,0 +1,19 @@
+# 本地环境、依赖和构建产物不提交到 Git。
+.tools/
+.env
+.env.*
+!.env.example
+.venv/
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/questions/
+*.log
+.DS_Store

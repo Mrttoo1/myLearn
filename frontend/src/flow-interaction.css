@@ -1,0 +1,284 @@
+/* 整节课保留完整系统拓扑，下一步只改变消息与处理状态。 */
+.message-diagram {
+  max-width: 940px;
+  margin-inline: auto;
+}
+.message-diagram .network-canvas {
+  min-height: 0;
+  max-height: none;
+}
+.execution-zone rect {
+  fill: #f5f4ed;
+  fill-opacity: 0.72;
+  stroke: #c9c4b7;
+  stroke-width: 1;
+  stroke-dasharray: 5 4;
+}
+.execution-zone text {
+  fill: #666b5d;
+  font-size: calc(11px * var(--diagram-text-scale, 1));
+}
+.execution-zone.frontend rect {
+  fill: #eeede7;
+  stroke-dasharray: none;
+}
+.flow-actor > svg {
+  opacity: 0.8;
+  transition: opacity 160ms ease-out;
+}
+.flow-actor.involved > svg {
+  opacity: 1;
+}
+.actor-ground {
+  fill: #dcded3;
+  opacity: 0.35;
+}
+.flow-actor.sender .actor-ground {
+  fill: #b8c7ad;
+  opacity: 0.55;
+}
+.flow-actor.receiver .actor-ground {
+  fill: #cbb994;
+  opacity: 0.55;
+}
+.flow-actor .device-name {
+  font-size: calc(16px * var(--diagram-text-scale, 1));
+  font-weight: 500;
+}
+.flow-actor .device-port {
+  font-size: calc(11px * var(--diagram-text-scale, 1));
+}
+.topology-wire {
+  fill: none;
+  stroke: #c9c5b9;
+  stroke-width: 1.3;
+  stroke-dasharray: 5 5;
+}
+.topology-wire.used {
+  stroke: #8b9981;
+  stroke-dasharray: none;
+}
+.topology-wire.active {
+  stroke: #526b5a;
+  stroke-width: 2;
+  stroke-dasharray: none;
+}
+.message-position {
+  stroke: #fffef8;
+  stroke-width: 2;
+}
+.current-message {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  padding: 4px 8px 14px;
+  font-size: 12px;
+  color: #666b5d;
+}
+.current-message code {
+  font-size: 13px;
+  color: #425d47;
+  overflow-wrap: anywhere;
+}
+.is-error .current-message code {
+  color: #ab4a35;
+}
+.message-wire {
+  fill: none;
+  opacity: 0.35;
+  stroke-width: 1.5;
+}
+.message-trail {
+  fill: none;
+  stroke-width: 2.5;
+}
+.message-leader {
+  fill: none;
+  stroke-width: 1;
+  stroke-dasharray: 2 3;
+  opacity: 0.55;
+}
+.named-packet {
+  cursor: pointer;
+}
+.named-packet > rect {
+  fill: #fffef8;
+  stroke-width: 1.3;
+}
+.named-packet text {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: calc(12px * var(--popup-scale, 1));
+  font-weight: 500;
+}
+.named-packet:focus {
+  outline: none;
+}
+.named-packet:focus-visible > rect {
+  stroke-width: 3;
+}
+.named-packet:hover > rect {
+  fill: #f0efe4;
+}
+.local-processing {
+  fill: none;
+  stroke: #7d9271;
+  stroke-width: 1.2;
+  stroke-dasharray: 4 5;
+}
+.message-diagram .flow-legend {
+  flex-wrap: wrap;
+  font-size: 11px;
+  padding-top: 4px;
+}
+.flow-state {
+  flex-wrap: wrap;
+}
+.step-heading {
+  min-height: 128px;
+}
+.sequence-scroller {
+  max-height: 420px;
+  overflow: auto;
+  padding-bottom: 10px;
+  overscroll-behavior: contain;
+}
+.sequence-history {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.sequence-history .device-name {
+  font-size: 15px;
+}
+.sequence-history .device-role {
+  font-size: 12px;
+}
+.sequence-lifeline {
+  fill: none;
+  stroke: #bbb7ab;
+  stroke-dasharray: 4 5;
+}
+.sequence-message {
+  cursor: pointer;
+}
+.sequence-message > rect {
+  fill: transparent;
+  stroke: transparent;
+}
+.sequence-message > path {
+  stroke: #64775b;
+  stroke-width: 1.5;
+}
+.sequence-message > text {
+  fill: #445c41;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 12px;
+}
+.sequence-message.future {
+  opacity: 0.3;
+}
+.sequence-message.current > rect {
+  fill: #edf0e4;
+}
+.sequence-message.current > path {
+  stroke-width: 2.5;
+}
+.sequence-message.selected > rect {
+  fill: #f2ebda;
+  stroke: #a28d63;
+}
+.sequence-message.failure > path {
+  stroke: #aa4934;
+}
+.sequence-message.failure > text {
+  fill: #aa4934;
+}
+.sequence-message:focus {
+  outline: none;
+}
+.sequence-message:focus-visible > rect {
+  stroke: #56744a;
+  stroke-width: 2;
+}
+.sequence-message .sequence-number {
+  fill: #646c59;
+  font-size: 10px;
+}
+.message-direction {
+  display: block;
+  font-size: 10px;
+  color: #65715e;
+  margin: -3px 0 6px;
+}
+.message-table tbody tr {
+  cursor: pointer;
+}
+.message-flow .message-table {
+  max-height: 260px;
+  overflow-y: auto;
+  position: relative;
+}
+.message-flow thead {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #f2f1eb;
+}
+.message-table tbody tr.inspected {
+  background: #f2ebda;
+}
+.message-table tbody tr:not(.active):hover {
+  background: #efeee4;
+}
+.history-inspection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 18px;
+  border-bottom: 1px solid #d8ceba;
+  background: #f2ebda;
+  color: #665536;
+  font-size: 12px;
+}
+.history-inspection small {
+  display: block;
+  margin-top: 4px;
+  font-size: 10px;
+}
+.history-inspection button {
+  min-height: 36px;
+  font-size: 11px;
+  border: 1px solid #a59a80;
+  border-radius: 4px;
+  padding: 5px 8px;
+  background: #fbf8ef;
+}
+.lesson-inspector {
+  scroll-margin-top: 76px;
+}
+@media (max-width: 700px) {
+  .message-diagram .network-canvas {
+    max-height: none;
+    min-height: 0;
+  }
+  .message-diagram .flow-legend {
+    font-size: 10px;
+    padding-inline: 8px;
+    row-gap: 8px;
+  }
+  .step-heading {
+    min-height: 128px;
+  }
+  .sequence-scroller {
+    max-height: 380px;
+  }
+  .message-table {
+    max-height: 330px;
+  }
+  .message-direction {
+    font-size: 9px;
+  }
+}

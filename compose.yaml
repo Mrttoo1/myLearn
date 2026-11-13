@@ -1,0 +1,22 @@
+# 第一版只用容器运行数据库，前后端在本机运行，方便打断点和阅读日志。
+services:
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: learn
+      POSTGRES_PASSWORD: learn_dev_password
+      POSTGRES_DB: learn
+    ports:
+      # 仅允许本机访问。这些账号信息只用于本地练习。
+      - "127.0.0.1:5432:5432"
+    volumes:
+      # PostgreSQL 18 的数据目录包含版本子目录，挂载它的父目录。
+      - postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U learn -d learn"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  postgres_data:

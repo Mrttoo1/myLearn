@@ -1,0 +1,613 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-13T09:27:47.191397+00:00",
+  "title": "Design System: 前后端图解",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "纸白",
+        "tonalRamp": [
+          "oklch(15% 0.0067 97.4)",
+          "oklch(26% 0.0067 97.4)",
+          "oklch(38% 0.0067 97.4)",
+          "oklch(49% 0.0067 97.4)",
+          "oklch(61% 0.0067 97.4)",
+          "oklch(72% 0.0067 97.4)",
+          "oklch(84% 0.0067 97.4)",
+          "oklch(95% 0.0067 97.4)"
+        ]
+      },
+      "ink": {
+        "role": "primary",
+        "displayName": "墨绿",
+        "tonalRamp": [
+          "oklch(15% 0.0350 166.2)",
+          "oklch(26% 0.0350 166.2)",
+          "oklch(38% 0.0350 166.2)",
+          "oklch(49% 0.0350 166.2)",
+          "oklch(61% 0.0350 166.2)",
+          "oklch(72% 0.0350 166.2)",
+          "oklch(84% 0.0350 166.2)",
+          "oklch(95% 0.0350 166.2)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "灰绿",
+        "tonalRamp": [
+          "oklch(15% 0.0214 150.2)",
+          "oklch(26% 0.0214 150.2)",
+          "oklch(38% 0.0214 150.2)",
+          "oklch(49% 0.0214 150.2)",
+          "oklch(61% 0.0214 150.2)",
+          "oklch(72% 0.0214 150.2)",
+          "oklch(84% 0.0214 150.2)",
+          "oklch(95% 0.0214 150.2)"
+        ]
+      },
+      "accent": {
+        "role": "primary",
+        "displayName": "绿墨",
+        "tonalRamp": [
+          "oklch(15% 0.0682 162.8)",
+          "oklch(26% 0.0682 162.8)",
+          "oklch(38% 0.0682 162.8)",
+          "oklch(49% 0.0682 162.8)",
+          "oklch(61% 0.0682 162.8)",
+          "oklch(72% 0.0682 162.8)",
+          "oklch(84% 0.0682 162.8)",
+          "oklch(95% 0.0682 162.8)"
+        ]
+      },
+      "accent-hover": {
+        "role": "primary",
+        "displayName": "悬停绿墨",
+        "tonalRamp": [
+          "oklch(15% 0.0569 163.5)",
+          "oklch(26% 0.0569 163.5)",
+          "oklch(38% 0.0569 163.5)",
+          "oklch(49% 0.0569 163.5)",
+          "oklch(61% 0.0569 163.5)",
+          "oklch(72% 0.0569 163.5)",
+          "oklch(84% 0.0569 163.5)",
+          "oklch(95% 0.0569 163.5)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "分隔线",
+        "tonalRamp": [
+          "oklch(15% 0.0136 115.9)",
+          "oklch(26% 0.0136 115.9)",
+          "oklch(38% 0.0136 115.9)",
+          "oklch(49% 0.0136 115.9)",
+          "oklch(61% 0.0136 115.9)",
+          "oklch(72% 0.0136 115.9)",
+          "oklch(84% 0.0136 115.9)",
+          "oklch(95% 0.0136 115.9)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "按钮白",
+        "tonalRamp": [
+          "oklch(15% 0.0000 0.0)",
+          "oklch(26% 0.0000 0.0)",
+          "oklch(38% 0.0000 0.0)",
+          "oklch(49% 0.0000 0.0)",
+          "oklch(61% 0.0000 0.0)",
+          "oklch(72% 0.0000 0.0)",
+          "oklch(84% 0.0000 0.0)",
+          "oklch(95% 0.0000 0.0)"
+        ]
+      },
+      "secondary-hover": {
+        "role": "neutral",
+        "displayName": "次级悬停纸",
+        "tonalRamp": [
+          "oklch(15% 0.0139 124.6)",
+          "oklch(26% 0.0139 124.6)",
+          "oklch(38% 0.0139 124.6)",
+          "oklch(49% 0.0139 124.6)",
+          "oklch(61% 0.0139 124.6)",
+          "oklch(72% 0.0139 124.6)",
+          "oklch(84% 0.0139 124.6)",
+          "oklch(95% 0.0139 124.6)"
+        ]
+      },
+      "selected": {
+        "role": "neutral",
+        "displayName": "选中纸",
+        "tonalRamp": [
+          "oklch(15% 0.0127 126.4)",
+          "oklch(26% 0.0127 126.4)",
+          "oklch(38% 0.0127 126.4)",
+          "oklch(49% 0.0127 126.4)",
+          "oklch(61% 0.0127 126.4)",
+          "oklch(72% 0.0127 126.4)",
+          "oklch(84% 0.0127 126.4)",
+          "oklch(95% 0.0127 126.4)"
+        ]
+      },
+      "note-body": {
+        "role": "neutral",
+        "displayName": "正文灰绿",
+        "tonalRamp": [
+          "oklch(15% 0.0313 155.1)",
+          "oklch(26% 0.0313 155.1)",
+          "oklch(38% 0.0313 155.1)",
+          "oklch(49% 0.0313 155.1)",
+          "oklch(61% 0.0313 155.1)",
+          "oklch(72% 0.0313 155.1)",
+          "oklch(84% 0.0313 155.1)",
+          "oklch(95% 0.0313 155.1)"
+        ]
+      },
+      "editor": {
+        "role": "neutral",
+        "displayName": "编辑纸",
+        "tonalRamp": [
+          "oklch(15% 0.0119 106.6)",
+          "oklch(26% 0.0119 106.6)",
+          "oklch(38% 0.0119 106.6)",
+          "oklch(49% 0.0119 106.6)",
+          "oklch(61% 0.0119 106.6)",
+          "oklch(72% 0.0119 106.6)",
+          "oklch(84% 0.0119 106.6)",
+          "oklch(95% 0.0119 106.6)"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "字段纸",
+        "tonalRamp": [
+          "oklch(15% 0.0067 115.7)",
+          "oklch(26% 0.0067 115.7)",
+          "oklch(38% 0.0067 115.7)",
+          "oklch(49% 0.0067 115.7)",
+          "oklch(61% 0.0067 115.7)",
+          "oklch(72% 0.0067 115.7)",
+          "oklch(84% 0.0067 115.7)",
+          "oklch(95% 0.0067 115.7)"
+        ]
+      },
+      "field-border": {
+        "role": "neutral",
+        "displayName": "字段灰绿边界",
+        "tonalRamp": [
+          "oklch(15% 0.0262 139.4)",
+          "oklch(26% 0.0262 139.4)",
+          "oklch(38% 0.0262 139.4)",
+          "oklch(49% 0.0262 139.4)",
+          "oklch(61% 0.0262 139.4)",
+          "oklch(72% 0.0262 139.4)",
+          "oklch(84% 0.0262 139.4)",
+          "oklch(95% 0.0262 139.4)"
+        ]
+      },
+      "placeholder": {
+        "role": "neutral",
+        "displayName": "占位灰绿",
+        "tonalRamp": [
+          "oklch(15% 0.0279 135.8)",
+          "oklch(26% 0.0279 135.8)",
+          "oklch(38% 0.0279 135.8)",
+          "oklch(49% 0.0279 135.8)",
+          "oklch(61% 0.0279 135.8)",
+          "oklch(72% 0.0279 135.8)",
+          "oklch(84% 0.0279 135.8)",
+          "oklch(95% 0.0279 135.8)"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "焦点绿",
+        "tonalRamp": [
+          "oklch(15% 0.0863 158.1)",
+          "oklch(26% 0.0863 158.1)",
+          "oklch(38% 0.0863 158.1)",
+          "oklch(49% 0.0863 158.1)",
+          "oklch(61% 0.0863 158.1)",
+          "oklch(72% 0.0863 158.1)",
+          "oklch(84% 0.0863 158.1)",
+          "oklch(95% 0.0863 158.1)"
+        ]
+      },
+      "danger": {
+        "role": "error",
+        "displayName": "删除红",
+        "tonalRamp": [
+          "oklch(15% 0.1302 30.8)",
+          "oklch(26% 0.1302 30.8)",
+          "oklch(38% 0.1302 30.8)",
+          "oklch(49% 0.1302 30.8)",
+          "oklch(61% 0.1302 30.8)",
+          "oklch(72% 0.1302 30.8)",
+          "oklch(84% 0.1302 30.8)",
+          "oklch(95% 0.1302 30.8)"
+        ]
+      },
+      "error-paper": {
+        "role": "error",
+        "displayName": "错误浅纸",
+        "tonalRamp": [
+          "oklch(15% 0.0195 55.1)",
+          "oklch(26% 0.0195 55.1)",
+          "oklch(38% 0.0195 55.1)",
+          "oklch(49% 0.0195 55.1)",
+          "oklch(61% 0.0195 55.1)",
+          "oklch(72% 0.0195 55.1)",
+          "oklch(84% 0.0195 55.1)",
+          "oklch(95% 0.0195 55.1)"
+        ]
+      },
+      "error-ink": {
+        "role": "error",
+        "displayName": "错误深红",
+        "tonalRamp": [
+          "oklch(15% 0.1139 33.1)",
+          "oklch(26% 0.1139 33.1)",
+          "oklch(38% 0.1139 33.1)",
+          "oklch(49% 0.1139 33.1)",
+          "oklch(61% 0.1139 33.1)",
+          "oklch(72% 0.1139 33.1)",
+          "oklch(84% 0.1139 33.1)",
+          "oklch(95% 0.1139 33.1)"
+        ]
+      },
+      "course-ink": {
+        "role": "primary",
+        "displayName": "炭墨",
+        "tonalRamp": [
+          "oklch(15% 0.0103 107.0)",
+          "oklch(26% 0.0103 107.0)",
+          "oklch(38% 0.0103 107.0)",
+          "oklch(49% 0.0103 107.0)",
+          "oklch(61% 0.0103 107.0)",
+          "oklch(72% 0.0103 107.0)",
+          "oklch(84% 0.0103 107.0)",
+          "oklch(95% 0.0103 107.0)"
+        ]
+      },
+      "course-muted": {
+        "role": "neutral",
+        "displayName": "课程灰墨",
+        "tonalRamp": [
+          "oklch(15% 0.0154 111.6)",
+          "oklch(26% 0.0154 111.6)",
+          "oklch(38% 0.0154 111.6)",
+          "oklch(49% 0.0154 111.6)",
+          "oklch(61% 0.0154 111.6)",
+          "oklch(72% 0.0154 111.6)",
+          "oklch(84% 0.0154 111.6)",
+          "oklch(95% 0.0154 111.6)"
+        ]
+      },
+      "course-line": {
+        "role": "neutral",
+        "displayName": "课程分隔线",
+        "tonalRamp": [
+          "oklch(15% 0.0143 88.7)",
+          "oklch(26% 0.0143 88.7)",
+          "oklch(38% 0.0143 88.7)",
+          "oklch(49% 0.0143 88.7)",
+          "oklch(61% 0.0143 88.7)",
+          "oklch(72% 0.0143 88.7)",
+          "oklch(84% 0.0143 88.7)",
+          "oklch(95% 0.0143 88.7)"
+        ]
+      },
+      "course-green": {
+        "role": "primary",
+        "displayName": "沉绿",
+        "tonalRamp": [
+          "oklch(15% 0.0400 155.0)",
+          "oklch(26% 0.0400 155.0)",
+          "oklch(38% 0.0400 155.0)",
+          "oklch(49% 0.0400 155.0)",
+          "oklch(61% 0.0400 155.0)",
+          "oklch(72% 0.0400 155.0)",
+          "oklch(84% 0.0400 155.0)",
+          "oklch(95% 0.0400 155.0)"
+        ]
+      },
+      "course-ochre": {
+        "role": "secondary",
+        "displayName": "赭棕",
+        "tonalRamp": [
+          "oklch(15% 0.0881 57.6)",
+          "oklch(26% 0.0881 57.6)",
+          "oklch(38% 0.0881 57.6)",
+          "oklch(49% 0.0881 57.6)",
+          "oklch(61% 0.0881 57.6)",
+          "oklch(72% 0.0881 57.6)",
+          "oklch(84% 0.0881 57.6)",
+          "oklch(95% 0.0881 57.6)"
+        ]
+      },
+      "course-dark": {
+        "role": "primary",
+        "displayName": "深绿墨",
+        "tonalRamp": [
+          "oklch(15% 0.0244 140.4)",
+          "oklch(26% 0.0244 140.4)",
+          "oklch(38% 0.0244 140.4)",
+          "oklch(49% 0.0244 140.4)",
+          "oklch(61% 0.0244 140.4)",
+          "oklch(72% 0.0244 140.4)",
+          "oklch(84% 0.0244 140.4)",
+          "oklch(95% 0.0244 140.4)"
+        ]
+      },
+      "course-dark-hover": {
+        "role": "primary",
+        "displayName": "悬停深绿墨",
+        "tonalRamp": [
+          "oklch(15% 0.0406 137.3)",
+          "oklch(26% 0.0406 137.3)",
+          "oklch(38% 0.0406 137.3)",
+          "oklch(49% 0.0406 137.3)",
+          "oklch(61% 0.0406 137.3)",
+          "oklch(72% 0.0406 137.3)",
+          "oklch(84% 0.0406 137.3)",
+          "oklch(95% 0.0406 137.3)"
+        ]
+      },
+      "course-sidebar": {
+        "role": "neutral",
+        "displayName": "目录纸",
+        "tonalRamp": [
+          "oklch(15% 0.0080 98.9)",
+          "oklch(26% 0.0080 98.9)",
+          "oklch(38% 0.0080 98.9)",
+          "oklch(49% 0.0080 98.9)",
+          "oklch(61% 0.0080 98.9)",
+          "oklch(72% 0.0080 98.9)",
+          "oklch(84% 0.0080 98.9)",
+          "oklch(95% 0.0080 98.9)"
+        ]
+      },
+      "course-inspector": {
+        "role": "neutral",
+        "displayName": "检查区纸",
+        "tonalRamp": [
+          "oklch(15% 0.0080 98.9)",
+          "oklch(26% 0.0080 98.9)",
+          "oklch(38% 0.0080 98.9)",
+          "oklch(49% 0.0080 98.9)",
+          "oklch(61% 0.0080 98.9)",
+          "oklch(72% 0.0080 98.9)",
+          "oklch(84% 0.0080 98.9)",
+          "oklch(95% 0.0080 98.9)"
+        ]
+      },
+      "course-field": {
+        "role": "neutral",
+        "displayName": "实验字段纸",
+        "tonalRamp": [
+          "oklch(15% 0.0054 95.1)",
+          "oklch(26% 0.0054 95.1)",
+          "oklch(38% 0.0054 95.1)",
+          "oklch(49% 0.0054 95.1)",
+          "oklch(61% 0.0054 95.1)",
+          "oklch(72% 0.0054 95.1)",
+          "oklch(84% 0.0054 95.1)",
+          "oklch(95% 0.0054 95.1)"
+        ]
+      },
+      "course-source": {
+        "role": "neutral",
+        "displayName": "源码纸",
+        "tonalRamp": [
+          "oklch(15% 0.0094 100.0)",
+          "oklch(26% 0.0094 100.0)",
+          "oklch(38% 0.0094 100.0)",
+          "oklch(49% 0.0094 100.0)",
+          "oklch(61% 0.0094 100.0)",
+          "oklch(72% 0.0094 100.0)",
+          "oklch(84% 0.0094 100.0)",
+          "oklch(95% 0.0094 100.0)"
+        ]
+      },
+      "course-error": {
+        "role": "neutral",
+        "displayName": "异常数据流",
+        "tonalRamp": [
+          "oklch(15% 0.1414 33.5)",
+          "oklch(26% 0.1414 33.5)",
+          "oklch(38% 0.1414 33.5)",
+          "oklch(49% 0.1414 33.5)",
+          "oklch(61% 0.1414 33.5)",
+          "oklch(72% 0.1414 33.5)",
+          "oklch(84% 0.1414 33.5)",
+          "oklch(95% 0.1414 33.5)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "lesson-title": {
+        "displayName": "课程标题",
+        "purpose": "首页课程主标题，小屏缩至24px。"
+      },
+      "step-title": {
+        "displayName": "步骤标题",
+        "purpose": "当前演示步骤。"
+      },
+      "code": {
+        "displayName": "项目源码",
+        "purpose": "真实源码、行号与技术内容。"
+      },
+      "headline": {
+        "displayName": "辅助记录页标题",
+        "purpose": "仅用于 /notes。"
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "control-background",
+        "value": "160ms ease-out",
+        "purpose": "课程与辅助记录页控件背景反馈。"
+      },
+      {
+        "name": "message-flight",
+        "value": "0.95s; power2.inOut",
+        "purpose": "独立 GSAP 发送动画；手动下一步完整发送后停留，可暂停、恢复及倍速。"
+      },
+      {
+        "name": "reading-pause",
+        "value": "1.65s",
+        "purpose": "自动播放在消息到达后等待阅读，最后一条不再等待；独立 GSAP 动画支持暂停、恢复及倍速。"
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "消息包固定在到达点、轨迹固定为完成态；保留方法名、方向与状态，时序图自动滚动不使用平滑动画。"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "course-wide-min",
+        "value": "1600px"
+      },
+      {
+        "name": "course-compact-max",
+        "value": "1250px"
+      },
+      {
+        "name": "course-stacked-inspector-max",
+        "value": "1100px"
+      },
+      {
+        "name": "course-mobile-max",
+        "value": "700px"
+      },
+      {
+        "name": "course-narrow-max",
+        "value": "360px"
+      },
+      {
+        "name": "notes-compact-max",
+        "value": "1000px"
+      },
+      {
+        "name": "notes-mobile-max",
+        "value": "760px"
+      },
+      {
+        "name": "notes-narrow-max",
+        "value": "390px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "课程主按钮",
+      "kind": "button",
+      "refersTo": "course-button",
+      "description": "从 lesson.css 提取的课程按钮外观；静态预览不运行播放器。",
+      "html": "<button class=\"ds-course-primary\">播放</button>",
+      "css": ".ds-course-primary{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid #bfbdb1;border-radius:5px;padding:9px 12px;min-height:38px;font-family:'PingFang SC','Microsoft YaHei',system-ui,sans-serif;font-size:12px;cursor:pointer;transition:background-color 160ms ease-out;background:#343e32;color:#fff;border-color:#343e32;}.ds-course-primary:hover:not(:disabled){background:#465640}.ds-course-primary:focus-visible{outline:3px solid #478764;outline-offset:4px}.ds-course-primary:disabled{opacity:.55;cursor:not-allowed}@media(max-width:700px){.ds-course-primary{min-height:40px;padding:8px 10px;font-size:11px}}"
+    },
+    {
+      "name": "课程次级按钮",
+      "kind": "button",
+      "refersTo": "course-button-secondary",
+      "description": "从 lesson.css 提取的课程按钮外观；静态预览不运行播放器。",
+      "html": "<button class=\"ds-course-secondary\">下一步</button>",
+      "css": ".ds-course-secondary{display:inline-flex;align-items:center;justify-content:center;gap:7px;border:1px solid #bfbdb1;border-radius:5px;padding:9px 12px;min-height:38px;font-family:'PingFang SC','Microsoft YaHei',system-ui,sans-serif;font-size:12px;cursor:pointer;transition:background-color 160ms ease-out;background:transparent;color:#34342e;}.ds-course-secondary:hover:not(:disabled){background:#eeeee4}.ds-course-secondary:focus-visible{outline:3px solid #478764;outline-offset:4px}.ds-course-secondary:disabled{opacity:.55;cursor:not-allowed}@media(max-width:700px){.ds-course-secondary{min-height:40px;padding:8px 10px;font-size:11px}}"
+    },
+    {
+      "name": "/notes · 主按钮",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "从视图内按钮样式提取的独立预览；用于新建和保存。",
+      "html": "<button class=\"ds-primary\">保存记录</button>",
+      "css": ".ds-primary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 20px;border:1px solid transparent;border-radius:6px;font-family:'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;font-size:14px;font-weight:600;gap:8px;cursor:pointer;transition:background-color 160ms ease-out;background:var(--accent,#2d614a);color:#fff}.ds-primary:hover:not(:disabled){background:#214b39}.ds-primary:focus-visible{outline:3px solid #478764;outline-offset:4px;}.ds-primary:disabled{cursor:not-allowed;opacity:.55}"
+    },
+    {
+      "name": "/notes · 分页次级按钮",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "透明底、细边框；当前用于上一页和下一页。",
+      "html": "<button class=\"ds-secondary\">下一页</button>",
+      "css": ".ds-secondary{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 20px;border:1px solid transparent;border-radius:6px;font-family:'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;font-size:14px;font-weight:600;gap:8px;cursor:pointer;transition:background-color 160ms ease-out;padding:8px 14px;background:transparent;border-color:var(--line,#dcded4);color:var(--ink,#243c32)}.ds-secondary:hover:not(:disabled){background:#e9ede3}.ds-secondary:focus-visible{outline:3px solid #478764;outline-offset:4px;}.ds-secondary:disabled{cursor:not-allowed;opacity:.55}"
+    },
+    {
+      "name": "/notes · 文字操作",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "刷新、编辑、清空及取消等视图内文字按钮。",
+      "html": "<button class=\"ds-text\">编辑</button>",
+      "css": ".ds-text{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 4px;border:0;background:transparent;font-family:'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;font-size:13px;gap:8px;cursor:pointer;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:4px;color:var(--accent,#2d614a)}.ds-text:hover:not(:disabled){text-decoration-color:currentColor}.ds-text:focus-visible{outline:3px solid #478764;outline-offset:4px;}.ds-text:disabled{cursor:not-allowed;opacity:.55}"
+    },
+    {
+      "name": "/notes · 标题字段",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "视图内标准文本框；标签始终在字段上方。",
+      "html": "<label class=\"ds-label\" for=\"ds-note-title\">学习主题 <span class=\"ds-required\">必填</span></label><input class=\"ds-input\" id=\"ds-note-title\" placeholder=\"例如：第一次理解数据库事务\" maxlength=\"100\" required>",
+      "css": ".ds-label{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;font-family:'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;font-size:14px;font-weight:600;color:var(--ink,#243c32)}.ds-required{font-size:12px;font-weight:400;color:var(--muted,#5c685e)}.ds-input{display:block;width:100%;padding:13px 14px;color:var(--ink,#243c32);background:#fafbf6;border:1px solid #7f8b7c;border-radius:6px;font-family:'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;font-size:14px;line-height:1.7;accent-color:var(--accent,#2d614a);caret-color:var(--accent,#2d614a);}.ds-input::placeholder{color:#657060;opacity:1}.ds-input:focus-visible{outline:3px solid #478764;outline-offset:4px;}"
+    },
+    {
+      "name": "/notes · 记录分页",
+      "kind": "nav",
+      "description": "从 NotesView.vue 内的分页导航提取，不是独立 Vue 组件；静态示例只演示外观。",
+      "html": "<nav class=\"ds-pagination\" aria-label=\"记录分页\"><button class=\"ds-page-btn\" disabled>上一页</button><span class=\"ds-page-number\">第 1 / 2 页</span><button class=\"ds-page-btn\">下一页</button></nav>",
+      "css": ".ds-pagination{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:28px}.ds-page-btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:11px 20px;border:1px solid transparent;border-radius:6px;font-family:'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;font-size:14px;font-weight:600;gap:8px;cursor:pointer;transition:background-color 160ms ease-out;padding:8px 14px;background:transparent;border-color:var(--line,#dcded4);color:var(--ink,#243c32)}.ds-page-btn:hover:not(:disabled){background:#e9ede3}.ds-page-btn:focus-visible{outline:3px solid #478764;outline-offset:4px;}.ds-page-btn:disabled{cursor:not-allowed;opacity:.55}.ds-page-number{font-family:'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;font-size:13px;color:var(--muted,#5c685e);font-variant-numeric:tabular-nums}"
+    },
+    {
+      "name": "/notes · 分隔式记录",
+      "kind": "custom",
+      "description": "从视图内记录条目提取的外观预览；示例文字只用于预览，不是产品数据。",
+      "html": "<article class=\"ds-note\"><div class=\"ds-meta\">时间</div><h3 class=\"ds-note-title\">记录标题</h3><p class=\"ds-note-content\">记录正文预览。</p><div class=\"ds-note-actions\"><button class=\"ds-note-edit\">编辑</button><button class=\"ds-note-delete\">删除</button></div></article>",
+      "css": ".ds-note{padding:24px 0 16px;border-bottom:1px solid var(--line,#dcded4);overflow-wrap:anywhere;font-family:'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;color:var(--ink,#243c32)}.ds-note.ds-selected{background:#edf1e8;padding-inline:16px}.ds-meta{font-size:12px;color:var(--muted,#5c685e);margin-bottom:10px;font-variant-numeric:tabular-nums}.ds-note-title{margin:0;font-size:18px;line-height:1.6;font-weight:600}.ds-note-content{margin:8px 0 0;font-size:14px;line-height:1.9;color:#4a5d50;white-space:pre-wrap;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:4;overflow:hidden}.ds-note-actions{display:flex;gap:24px;margin-top:10px}.ds-note-edit,.ds-note-delete{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 4px;border:0;background:transparent;font-family:'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;font-size:13px;gap:8px;cursor:pointer;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:4px;color:var(--accent,#2d614a)}.ds-note-delete{color:var(--danger,#9b3c2e)}.ds-note-edit:hover:not(:disabled),.ds-note-delete:hover:not(:disabled){text-decoration-color:currentColor}.ds-note-edit:focus-visible,.ds-note-delete:focus-visible{outline:3px solid #478764;outline-offset:4px;}.ds-note-edit:disabled,.ds-note-delete:disabled{cursor:not-allowed;opacity:.55}"
+    },
+    {
+      "name": "/notes · 编辑容器",
+      "kind": "card",
+      "refersTo": "editor",
+      "description": "NotesView.vue 内的浅底编辑区域；本预览仅展示容器、标题与说明，没有新增 Vue 组件。",
+      "html": "<aside class=\"ds-editor\"><div class=\"ds-editor-heading\"><h2 class=\"ds-editor-title\">写下新的收获</h2><span class=\"ds-editor-mark\" aria-hidden=\"true\"></span></div><p class=\"ds-editor-description\">用自己的话，记下你真正理解的部分。</p></aside>",
+      "css": ".ds-editor{background:#eeeee5;padding:24px 28px 28px;border-radius:12px;font-family:'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;color:var(--ink,#243c32)}.ds-editor-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:44px}.ds-editor-title{margin:0;font-size:18px;font-weight:650}.ds-editor-mark{width:22px;height:3px;background:#9b6f44}.ds-editor-description{font-size:13px;line-height:1.8;color:var(--muted,#5c685e);margin:6px 0 26px}@media(max-width:1000px){.ds-editor{padding:20px}}@media(max-width:760px){.ds-editor-description{margin-bottom:20px}}"
+    },
+    {
+      "name": "/notes · 错误提示",
+      "kind": "custom",
+      "refersTo": "error",
+      "description": "表单与请求错误共用的提示外观；列表失败时附带重试按钮。",
+      "html": "<div class=\"ds-error\" role=\"alert\"><p class=\"ds-error-copy\">操作失败，请重试</p><button class=\"ds-retry\">重新加载</button></div>",
+      "css": ".ds-error{padding:14px 16px;background:#f7e9e0;color:#853525;font-family:'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;font-size:14px;line-height:1.8;margin:12px 0;border-radius:6px;overflow-wrap:anywhere}.ds-error-copy{margin:0}.ds-retry{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:8px 4px;border:0;background:transparent;font-family:'PingFang SC', 'Microsoft YaHei', system-ui, sans-serif;font-size:13px;gap:8px;cursor:pointer;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:4px;color:#853525}.ds-retry:hover:not(:disabled){text-decoration-color:currentColor}.ds-retry:focus-visible{outline:3px solid #478764;outline-offset:4px;}.ds-retry:disabled{cursor:not-allowed;opacity:.55}"
+    }
+  ],
+  "narrative": {
+    "northStar": "纸上技术图解",
+    "overview": "暖纸色、墨色线条和低饱和绿棕色构成阅读环境。用户指定 [MCP Explained](https://mcp-explained.com/) 的教学、视觉与技术插图方向；当前首页将交互流程、中文解释和真实项目源码并置。技术设备是 `TechnicalDevice.vue` 中原创编写的几何 SVG，保持可缩放线稿和少量明暗面。\n\n本记录从 `frontend/src/lesson.css`、`flow-interaction.css`、`styles.css`、`App.vue`、`views/LearnView.vue` 和现有图示、播放器、请求实验组件提取。首页是交互课程，原有纸上手记模式保留于辅助入口 `/notes`。前置 course/lesson 令牌描述课程；既有记录页令牌继续用于辅助页面，不替代课程配色。\n\n本轮交互记录以源码为依据；浏览器连接不可用，未执行新截图验收，旧截图不作为本轮证明。",
+    "keyCharacteristics": [
+      "暖纸色平面、墨色技术线稿与绿棕色状态强调。",
+      "课程目录、完整稳定拓扑和源码检查并列；全部模块按运行环境紧凑分组，只随屏宽重排。",
+      "GSAP 分别控制消息发送与阅读等待，历史查看独立于当前播放位置。",
+      "示例演示与真实请求分别标明，学习记录使用真实数据。"
+    ],
+    "rules": [
+      {
+        "name": "The Flat Paper Rule",
+        "body": "保持表面平整，以色阶与分隔线表达分组。",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** 保持暖纸色平面、墨线技术设备和清楚的中文讲解。",
+      "**Do** 保留整节课的全部模块与稳定位置，用连线和高亮表达处理进度；发送与阅读等待保持一致，历史检查独立于播放位置。",
+      "**Do** 标明示例演示、源码来源与真实请求结果，记录页显示真实数据。",
+      "**Do** 保留字段标签、键盘焦点与异常文字；小屏保留完整内容与可展开目录。"
+    ],
+    "donts": [
+      "**Don't** 将辅助学习记录作为课程首页的主视觉与布局依据。",
+      "**Don't** 将原创 SVG 设备描述为生成图片或外部素材。",
+      "**Don't** 用模拟进度填充真实记录空状态，或暗示播放控制能暂停真实后端事务。",
+      "**Don't** 将平面分隔式内容改成重复悬浮卡片，或降低字段、辅助文字和焦点的可辨识度。"
+    ]
+  }
+}
